@@ -9,10 +9,10 @@ PRIMARY KEY(Id)
 );
 
 INSERT INTO Empleado (Nombre, Departamento)
-VALUES ("Betty Pinzon Solano", "secretaria de presidencia")
+VALUES ("Betty Pinzon Solano", "secretaria de presidencia");
 INSERT INTO Empleado (Nombre, Departamento)
-VALUES ("Teresa Villalobos Leiton","finanzas")
+VALUES ("Teresa Villalobos Leiton","finanzas");
 INSERT INTO Empleado (Nombre, Departamento)
-VALUES ("Juan Jose Rodriguez Quesada","recursos humanos")
+VALUES ("Juan Jose Rodriguez Quesada","recursos humanos");
 
 SELECT * FROM Empleado

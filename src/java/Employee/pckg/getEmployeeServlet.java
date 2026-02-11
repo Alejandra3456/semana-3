@@ -34,7 +34,7 @@ public class getEmployeeServlet extends HttpServlet {
         //generamos la instancia de DB para poder usar la funcion execute query
         DB database = new DB(); 
         
-        ResultSet rs = database.ExecuteQuery("SELECT * FROM Empresa;");
+        ResultSet rs = database.ExecuteQuery("SELECT * FROM Empleado;");
         
         
         response.setContentType("text/html;charset=UTF-8");
@@ -48,9 +48,10 @@ public class getEmployeeServlet extends HttpServlet {
             out.println("<body>");
             
             out.println("<body>");
+            out.println("lista de empleados");
             
             while (rs.next()){
-                out.println("<h1>" + rs.getString("Nombre")+ rs.getString("Departamento") + "</h1>");
+                out.println("<h2>" + rs.getString("Nombre")+ " " + rs.getString("Departamento") + "</h2>");
             }
             
             out.println("</body>");
